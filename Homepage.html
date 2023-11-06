@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Baker Brew</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Add your custom styles here */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('cake background.jpg'); /* Set the background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: transparent;
+            margin: 0;
+            padding: 0;
+        } 
+        header {
+            background-color: white; /* White background for the header */
+            color: #fff;
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Dancing Script', cursive; /* Use the curly font here */
+            position: relative;
+        }
+        .logo {
+            display: block;
+            margin: 0 auto; /* Center the logo horizontally */
+            max-width: 150px; /* Adjust the max-width as needed */
+            padding: 2px 0; /* Add padding to create the white banner */
+        }
+        .nav-bar {
+            padding: 1px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav li {
+            display: inline;
+            margin: 0 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #000; /* Black text color */
+            font-weight: bold;
+        }
+        .slideshow-container {
+            text-align: center;
+            margin-top: 50px;
+            position: relative; /* Add relative positioning to contain the dots */
+        }
+        .slideshow-container img {
+            max-width: 100%;
+            height: auto;
+        }
+        .button-container {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            margin-top: 20px;
+            padding: 20px 0;
+        }
+        .custom-button {
+            text-decoration: none;
+            color: #fff;
+            background-color: #ff8c00;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .concierge-info {
+            text-align: center;
+            margin-top: 20px;
+            color: #fff;
+            font-size: 18px;
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60vh;
+        }
+        .white-container {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .sample-cakes-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .sample-cake {
+            flex: 0 0 calc(33.33% - 20px); /* Three columns with 20px spacing between */
+            margin: 10px;
+        }
+        .sample-cake img {
+            max-width: 100%;
+            height: auto;
+        }
+        .grey-line {
+            height: 2px;
+            background-color: #ccc;
+            margin: 20px 0;
+        }
+        .social-icons {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .social-icons a {
+            margin: 10px;
+            display: inline-block;
+        }
+        .social-icons img {
+            max-width: 30px;
+            height: auto;
+        }
+        .slider-dots {
+            text-align: center;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        .dot {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #ffffff;
+            display: inline-block;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        .dot.active {
+            background-color: #000000;
+        }
+        footer {
+            background-color: #ff8c00;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .about-container {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        @media screen and (max-width: 576px) {
+            .flex-item {
+                display: flex;
+                flex: 45%;
+                flex-grow: 0;
+            }
+        }
+
+        /* Add a new style for the background image container */
+        .background-image-container {
+            background-image: url('photos/cake background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: transparent;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        /* Style for the "About Us" banner */
+        .about-banner {
+            background-color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        /* Removed the duplicated .small-image class here, no need to define it twice */
+    </style>
+</head>
+<body>
+    <div class="background-image-container">
+        <header>
+            <img src="photos/logo.png" alt="Delicious Cakes Logo" class="logo">
+            <div class="nav-bar">
+                <nav>
+                    <ul>
+                        <li><a href="#">Classic Cake</a></li>
+                        <li><a href="#">Customized Cake</a></li>
+                        <li><a href="#">Durian Cake</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="photos/slider image1.jpg" alt="Cake Image 1">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="photos/slider image 2.jpg" alt="Cake Image 2">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="photos/slider image 3.jpg" alt="Cake Image 3">
+            </div>
+        </div>
+        <div class="slider-dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <div class="button-container">
+            <a href="reservation.html" class="custom-button">ORDER NOW</a>
+        </div>
+
+        <div class="concierge-info">
+            <p>CONCIERGE: +1 123-456-7890 / info@deliciouscakes.com</p>
+            <p>(Concierge Operating Hours: Mon-Sun 9:00 AM - 9:00 PM)</p>
+        </div>
+    </div>
+
+    <!-- About Us banner below the background image -->
+    <div class="about-banner">
+        <div class="about-container">
+            <div class="sample-cakes-container">
+                <div class="sample-cake">
+                    <img src="photos/samplecake1.jpg" alt="Cake Image 4">
+                </div>
+                <div class="sample-cake">
+                    <img src="photos/samplecake2.jpg" alt="Cake Image 5">
+                </div>
+                <div class="sample-cake">
+                    <img src="photos/samplecake3.jpg" alt="Cake Image 6">
+                </div>
+            </div>
+            <h3>ABOUT US</h3>
+            <p>
+                Started back in 2015 with a humble beginning of the love and passion for baking,
+                Baker's Brew wanted to share this zeal for baking with the community
+                around the neighborhood of Sembawang, Singapore.
+
+                Since then, we have grown strong to be The Leading Cake Shop & Bakery in Singapore.
+            </p>
+            <div class="grey-line"></div>
+            <h2>FOLLOW US ON SOCIAL MEDIA</h2>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/deliciouscakes" target="_blank">
+                    <img src="instagram-icon.png" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/deliciouscakes" target="_blank">
+                    <img src="facebook-icon.png" alt="Facebook">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <!-- Your footer content -->
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                dots[i].classList.remove("active");
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].classList.add("active");
+            setTimeout(showSlides, 5000); // Change image every 5 seconds (5000 milliseconds)
+        }
+
+        function currentSlide(n) {
+            showSlide(slideIndex = n);
+        }
+
+        function showSlide(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                dots[i].classList.remove("active");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].classList.add("active");
+        }
+    </script>
+</body>
+</html>

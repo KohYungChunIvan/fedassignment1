@@ -2,15 +2,16 @@
 /* Add your custom styles here */
 body {
     font-family: 'Arial', sans-serif;
-    background-image: url('phcake background1.jpg'); /* Set the background image */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-color: #3c2509;
+    background-color: #d1d1d1;  
     margin: 0;
     padding: 0;
     color: #fff
 } 
+
+
 
 .container {
     overflow-x: hidden;
@@ -31,6 +32,7 @@ header {
 }
 .nav-bar {
     padding: 1px;
+    
 }
 nav ul {
     list-style: none;
@@ -39,22 +41,26 @@ nav ul {
 }
 nav li {
     display: inline;
-    margin: 0 20px;
+    margin: auto 20px;
 }
+
+
 nav a {
     text-decoration: none;
     color: #000; /* Black text color */
     font-weight: bold;
 }
 .slideshow-container {
+    max-width: 750px;
+    height: 430px;
     text-align: center;
-    margin-top: 50px;
+    margin: 0 auto;
     position: relative; /* Add relative positioning to contain the dots */
 }
 .slideshow-container img {
     width: 100%; /* Set maximum width for slider images */
     height: 430px;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 
@@ -89,6 +95,8 @@ nav a {
     justify-content: center;
     align-items: center;
     height: 60vh;
+    margin: 10px 0;
+    padding: 10px;
 }
 .white-container {
     background-color: #fff;
@@ -168,11 +176,12 @@ nav a {
     background-color: #4a4747;
 }
 footer {
+    background-color: #3c2509;
     color: #fff;
     padding: 10px;
     text-align: center;
     font-size: 14px;
-    max-width: 800px;
+    max-width: 0 auto;
     margin: 0 auto;
 }
 .about-container {
@@ -185,8 +194,20 @@ footer {
 
 
 /* Add a new style for the background image container */
-.background-image-container {
+.background-image-container1 {
     background-image: url('photos/cake background1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.background-image-container2 {
+    background-image: url('photos/cake background2.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -257,9 +278,12 @@ footer {
         margin: 10px 0;
         text-align: center;
     }
-    nav li {
-        display: inline;
-        margin: 0 50px;
+    nav li a {
+        display: inline-block;
+        width: 34%;
+        margin: 10px 20px;
+
+
     }
     
     .slideshow-container {

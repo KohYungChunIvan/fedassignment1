@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Baker Brew</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style sheet.css">
+    <script src="java script.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" id="home-link">
+            <img src="photos/logo1.png" alt="Baker's Brew" class="logo">
+        </a>
+        <div class="nav-bar">
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="Classic Cake.html" class="cakes-link">Classic Cake</a></li>
+                    <li><a href="Customised Cake.html" class="cakes-link">Customized Cake</a></li>
+                    <li><a href="Durian Cake.html" class="cakes-link">Durian Cake</a></li>
+                    <li><a href="Contact.html" class="cakes-link underline-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="popup-content2">
+        <form id="contact-form">
+            <div class="form-row1">
+                <div class="form-group2">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group2">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+            <div class="form-row">
+
+                <div class="form-group3">
+                    <label for="contact">Phone:</label>
+                    <input type="text" id="contact" name="contact" required>
+                </div>
+            </div>
+            <div class="form-row">
+
+                <div class="form-group3">
+                    <label for="description">Message:</label>
+                    <textarea id="description" name="description" rows="4" required></textarea>
+                </div>
+            </div>
+
+            <div class="submit-container">
+                <button class="custom-button" onclick="closePopupForm()">Submit</button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+
+<footer>
+    <div class="about-container">
+        <h3>ABOUT US</h3>
+        <p>
+            Started back in 2015 with a humble beginning of the love and passion for baking,
+            Baker's Brew wanted to share this zeal for baking with the community
+            around the neighborhood of Sembawang, Singapore.
+
+            Since then, we have grown strong to be The Leading Cake Shop & Bakery in Singapore.
+        </p>
+        <div class="concierge-info">
+            <p> +65 8877 8870 / enquiries@bakersbrew.com / corporate@bakersbrew.com</p>
+            <p>(Operating Hours: Mon-Sun 9:00 AM - 6:00 PM)</p>
+        </div>
+        <div class="grey-line"></div>
+        <h2>FOLLOW US ON SOCIAL MEDIA</h2>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/baker" target="_blank">
+                <img src="photos/instagramicon.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/bakersbrewstudio" target="_blank">
+                <img src="photos/facebookicon.png" alt="Facebook">
+            </a>
+            <a href="https://www.tiktok.com/@bakersbrew" target="_blank">
+                <img src="photos/tiktokicon.png" alt="Tiktok">
+            </a>
+        </div>
+    </div>
+</footer>
+</html>

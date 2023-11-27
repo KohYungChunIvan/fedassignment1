@@ -67,3 +67,37 @@ const videoObserver = new IntersectionObserver((entries) => {
 }, options);
 
 videoObserver.observe(videoContainer);
+
+// JavaScript for Pop-up Form
+function openPopupForm() {
+    // Clear the form fields
+    resetForm();
+    document.querySelector('.popup-content').style.display = 'block';
+}
+
+function closePopupForm() {
+    document.querySelector('.popup-content').style.display = 'none';
+}
+
+// Function to reset the form fields
+function resetForm() {
+    document.getElementById('name').value = '';
+    document.getElementById('contact').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('description').value = '';
+    document.getElementById('file').value = '';
+}
+
+// Optional: You can handle form submission using AJAX or any other method you prefer
+document.getElementById('customForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    // Add your form submission logic here, for example, using AJAX
+    // You can access form data using document.getElementById('name').value, etc.
+
+    // After successful submission, close the form and reset it
+    closePopupForm();
+    resetForm();
+});
+
+

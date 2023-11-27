@@ -5,7 +5,7 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-color: #d1d1d1;  
+    background-color: rgb(203, 203, 203);  
     margin: 0;
     padding: 0;
     color: #fff
@@ -79,6 +79,7 @@ nav a {
     border-radius: 5px;
     font-weight: bold;
     font-size: 20px;
+    border: none; /* Add this line */
 }
 .slider-dots {
     text-align: center;
@@ -145,7 +146,7 @@ nav a {
 
 
 footer {
-    background-color: #3c2509;
+    background-color: rgb(29, 29, 22);
     color: #fff;
     padding: 10px;
     text-align: center;
@@ -354,6 +355,124 @@ footer {
 
 
 
+/* Pop-up Styles */
+
+.popup-content {
+    display: none;
+    background-color: #746060;
+    margin: 1% auto;
+    padding: 20px;
+    width: 70%;
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(45, 44, 44, 0.1);
+}
+
+.popup-content2 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #746060;
+    margin: 1% auto;
+    padding: 20px;
+    width: 70%;
+    max-width: 750px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(45, 44, 44, 0.1);
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Form Styles */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #332f2f;
+    border-radius: 4px;
+}
+
+.form-group input[type="file"] {
+    margin-bottom: 20px;
+}
+
+.submit-container {
+    text-align: center;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    align-items: center;
+}
+.form-row1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+/* Add this CSS to adjust the width of form fields for better responsiveness */
+.form-group2 {
+    flex: 0 0 calc(50% - 10px);
+}
+.form-group3 {
+    flex: 0 0 calc(100% - 10px);
+}
+.form-group2 input,
+.form-group2 textarea {
+    width: 300px; /* or any desired width */
+    padding: 10px; 
+    margin-bottom: 10px;
+    border: 1px solid #332f2f;
+    border-radius: 4px;
+}
+
+.form-group3 input,
+.form-group3 textarea {
+    width: 687px; /* or any desired width */
+    padding: 10px; 
+    margin-bottom: 10px;
+    border: 1px solid #332f2f;
+    border-radius: 4px;
+}
+
+
+
+/* Adjust the width of the submit button for better responsiveness */
+.submit-button {
+    width: 100%; /* Make the button full width */
+}
+
+
+
 /* Desktop View */
 @media (min-width: 769px) {
     .slideshow-container {
@@ -434,7 +553,7 @@ footer {
     .storedescription-container h3 {
         text-align: left;
         padding-left: 47px;
-        margin-top: 410px;
+        margin-top: 390px;
     
     }
 
@@ -458,8 +577,8 @@ footer {
     
     
     .sample-cake {
-        flex: 0 0 calc(55% - 100px);
-        margin: 10px;
+        flex: 0 0 calc(57% - 100px);
+        margin: 13px;
         position: relative;
         overflow: hidden;
         align-items: center;
@@ -511,5 +630,59 @@ footer {
         width: 91%; /* Adjust the percentage as needed */
     }
 
+    .form-group {
+        width: 100%;
+    }
+
+    .form-group label {
+        text-align: left;
+    }
+
+    .form-group3 input,
+    .form-group3 textarea {
+        width: 350px;
+        box-sizing: border-box; /* Include padding and border in width calculation */
+    }
+    .form-group2 input,
+    .form-group2 textarea {
+        width: 350px;
+        box-sizing: border-box; /* Include padding and border in width calculation */
+    }
+
+    .form-row {
+        flex-direction: row;
+        padding-left: 4px;
+        margin-top: 0px;
+    }
+
+    .form-row input,
+    .form-row textarea {
+        margin-right: 10px; /* Adjust spacing between form fields */
+        margin-bottom: 0;
+        margin-top: 0px;
+    }
+
+    .form-row1 {
+        display: flex;
+        flex-direction: column;
+        width: 55% ;
+        padding-left: 57px;
+    }
+
+    .form-row1 #name {
+        margin-bottom: 28px;
+    }
+
+    .form-row1 input,
+    .form-row1 textarea {
+        margin-right: 10px; /* Adjust spacing between form fields */
+        margin-bottom: 10px;
+
+    }
+    
+    .popup-content2 .submit-container{
+        padding-right: 12% ;
+    }
+   
     /* Add other mobile styles here */
 }

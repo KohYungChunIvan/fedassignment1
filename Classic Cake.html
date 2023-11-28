@@ -1,99 +1,139 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8" />
-    <title>Baker Brew</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style sheet.css">
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Baker Brew</title>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style sheet.css">
+        <script src="java script.js" defer></script>
+
+    </head>
+
+    <body>
+        <div class="background-image-container2">
+            <header>
+                <a href="index.html" id="home-link">
+                    <img src="photos/logo1.png" alt="Delicious Cakes Logo" class="logo">
+                </a>
+                <div class="nav-bar">
+                    <nav>
+                        <ul>
+                            <li><a href="Classic Cake.html" class="cakes-link underline-link">Classic Cake</a></li>
+                            <li><a href="Customised Cake.html" class="cakes-link">Customized Cake</a></li>
+                            <li><a href="Durian Cake.html" class="cakes-link">Durian Cake</a></li>
+                            <li><a href="Contact.html" class="cakes-link">Contact</a></li>
+                            <div class="cart-icon" onclick="toggleCart()">
+                                <img src="photos/shopping-cart.png" alt="Shopping Cart">
+                                <span id="cart-count">0</span>
+                            </div>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <div class="about-container">
+                <div class="sample-cakes-container">
+
+                    <div class="sample-cake" id="cake1">
+                        <img src="photos/Yubari Melon Peach Cake.jpg" alt="Cake Image 1">
+                        <div class="cake-info">
+                            <div class="plus-icon" onclick="addToCart('Yubari Melon Peach Cake', this)">+</div>
+                        </div>
+                        <div class="cake-name">Yubari Melon Peach Cake <br><span class="price-tag">$49.90</span></div>
+                    </div>
+
+                    <div class="sample-cake" id="cake2">
+                        <img src="photos/Earl Grey Lavender Cake.jpg" alt="Cake Image 2">
+                        <div class="cake-info">
+                            <div class="plus-icon" onclick="addToCart('Earl Grey Lavender Cake', this)">+</div>
+                        </div>
+                        <div class="cake-name">Earl Grey Lavender Cake<br> <span class="price-tag">$49.90</span></div>
+                    </div>
+                    <div class="sample-cake" id="cake3">
+                        <img src="photos/Mango Calamansi Yoghurt Cake.jpg" alt="Cake Image 3">
+                        <div class="cake-info">
+                            <div class="plus-icon" onclick="addToCart('Mango Calamansi Yoghurt Cake', this)">+</div>
+                        </div>
+                        <div class="cake-name">Mango Calamansi Yoghurt Cake<br> <span class="price-tag">$49.90</span></div>
+                    </div>
+                    <div class="sample-cake" id="cake4">
+                        <img src="photos/Merry Mango Origami Cake.jpg" alt="Cake Image 4">
+                        <div class="cake-info">
+                            <div class="plus-icon" onclick="addToCart('Merry Mango Origami Cake', this)">+</div>
+                        </div>
+                        <div class="cake-name">Merry Mango Origami Cake <br><span class="price-tag">$49.90</span></div>
+                    </div>
+                    <div class="sample-cake" id="cake5">
+                        <img src="photos/Chocolate Rhapsody Cake.jpg" alt="Cake Image 5">
+                        <div class="cake-info">
+                            <div class="plus-icon" onclick="addToCart('Chocolate Rhapsody Cake', this)">+</div>
+                        </div>
+                        <div class="cake-name">Chocolate Rhapsody Cake<br> <span class="price-tag">$49.90</span></div>
+                    </div>
+                    <div class="sample-cake" id="cake6">
+                        <img src="photos/Premium Pure Addiction.jpg" alt="Cake Image 6">
+                        <div class="cake-info">
+                            <div class="plus-icon" onclick="addToCart('Premium Pure Addiction', this)">+</div>
+                        </div>
+                        <div class="cake-name"id="cake2" >Premium Pure Addiction<br> <span class="price-tag">$49.90</span></div>
+                    </div>
+                    <div class="sample-cake" id="cake7">
+                        <img src="photos/Longevity Mahjong Cake.jpg" alt="Cake Image 7">
+                        <div class="cake-info">
+                            <div class="plus-icon" onclick="addToCart('Longevity Mahjong Cake', this)">+</div>
+                        </div>
+                        <div class="cake-name">Longevity Mahjong Cake<br> <span class="price-tag">$49.90</span></div>
+                    </div>
+                    <div class="sample-cake" id="cake8">
+                        <img src="photos/Galaxy Space Cake.jpg" alt="Cake Image 8">
+                        <div class="cake-info">
+                            <div class="plus-icon" onclick="addToCart('Galaxy Space Cake', this)">+</div>
+                        </div>
+                        <div class="cake-name">Galaxy Space Cake <br><span class="price-tag">$49.90</span></div>
+                    </div>
+                    <div class="sample-cake" id="cake9">
+                        <img src="photos/Black Sesame Hazelnut Praline Cake.jpg" alt="Cake Image 9">
+                        <div class="cake-info">
+                            <div class="plus-icon" onclick="addToCart('Black Sesame Hazelnut Praline Cake', this)">+</div>
+                        </div>
+                        <div class="cake-name">Black Sesame Hazelnut Praline Cake<br><span class="price-tag">$49.90</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart-popup" style="right: -500px;">
+            <div class="shopping-cart-title">Shopping Cart</div>
+            <div class="empty-cart-title">Your Cart is Empty</div>
+            <div class="cart-popup-content">
+            </div>
+            <div class="close-cart" onclick="toggleCart()">X</div>
+        </div>
+        
+    <footer>
+        <div class="about-container">
+            <div class="concierge-info">
+                <p> +65 8877 8870 / enquiries@bakersbrew.com / corporate@bakersbrew.com</p>
+                <p>(Operating Hours: Mon-Sun 9:00 AM - 6:00 PM)</p>
+            </div>
+            <div class="grey-line"></div>
+            <h2>FOLLOW US ON SOCIAL MEDIA</h2>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/baker" target="_blank">
+                    <img src="photos/instagramicon.png" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/bakersbrewstudio" target="_blank">
+                    <img src="photos/facebookicon.png" alt="Facebook">
+                </a>
+                <a href="https://www.tiktok.com/@bakersbrew" target="_blank">
+                    <img src="photos/tiktokicon.png" alt="Tiktok">
+                </a>
+            </div>
+        </div>    
+    </footer>
     <script src="java script.js" defer></script>
 
-</head>
+    </body>
 
-<body>
-    <div class="background-image-container2">
-        <header>
-            <a href="index.html" id="home-link">
-                <img src="photos/logo1.png" alt="Delicious Cakes Logo" class="logo">
-            </a>
-            <div class="nav-bar">
-                <nav>
-                    <ul>
-                        <li><a href="Classic Cake.html" class="cakes-link underline-link">Classic Cake</a></li>
-                        <li><a href="Customised Cake.html" class="cakes-link">Customized Cake</a></li>
-                        <li><a href="Durian Cake.html" class="cakes-link">Durian Cake</a></li>
-                        <li><a href="Contact.html" class="cakes-link">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-
-        <div class="about-container">
-            <div class="sample-cakes-container">
-                <div class="sample-cake">
-                    <img src="photos/samplecake1.jpg" alt="Cake Image 1">
-                    <div class="cake-name">Yubari Melon Peach Cake</div>
-                </div>
-                <div class="sample-cake">
-                    <img src="photos/samplecake2.jpg" alt="Cake Image 2">
-                    <div class="cake-name">Earl Grey Lavender Cake</div>
-                </div>
-                <div class="sample-cake">
-                    <img src="photos/mangocake.jpeg" alt="Cake Image 3">
-                    <div class="cake-name">Mango Calamansi Yoghurt Cake</div>
-                </div>
-                <div class="sample-cake">
-                    <img src="photos/samplecake4.jpg" alt="Cake Image 4">
-                    <div class="cake-name">Merry Mango Origami Cake</div>
-                </div>
-                <div class="sample-cake">
-                    <img src="photos/samplecake5.jpg" alt="Cake Image 5">
-                    <div class="cake-name">Chocolate Rhapsody Cake</div>
-                </div>
-                <div class="sample-cake">
-                    <img src="photos/samplecake6.jpg" alt="Cake Image 6">
-                    <div class="cake-name">Premium Pure Addiction</div>
-                </div>
-                <div class="sample-cake">
-                    <img src="photos/samplecake7.jpg" alt="Cake Image 7">
-                    <div class="cake-name">Longevity Mahjong Cake</div>
-                </div>
-                <div class="sample-cake">
-                    <img src="photos/samplecake8.jpg" alt="Cake Image 8">
-                    <div class="cake-name">Galaxy Space Cake</div>
-                </div>
-                <div class="sample-cake">
-                    <img src="photos/samplecake9.jpg" alt="Cake Image 9">
-                    <div class="cake-name">Black Sesame Hazelnut Praline Cake</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</body>
-
-<footer>
-    <div class="about-container">
-        <div class="concierge-info">
-            <p> +65 8877 8870 / enquiries@bakersbrew.com / corporate@bakersbrew.com</p>
-            <p>(Operating Hours: Mon-Sun 9:00 AM - 6:00 PM)</p>
-        </div>
-        <div class="grey-line"></div>
-        <h2>FOLLOW US ON SOCIAL MEDIA</h2>
-        <div class="social-icons">
-            <a href="https://www.instagram.com/baker" target="_blank">
-                <img src="photos/instagramicon.png" alt="Instagram">
-            </a>
-            <a href="https://www.facebook.com/bakersbrewstudio" target="_blank">
-                <img src="photos/facebookicon.png" alt="Facebook">
-            </a>
-            <a href="https://www.tiktok.com/@bakersbrew" target="_blank">
-                <img src="photos/tiktokicon.png" alt="Tiktok">
-            </a>
-        </div>
-    </div>    
-</footer>
-
-
-</html>
+    </html>

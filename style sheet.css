@@ -192,6 +192,8 @@ footer {
     position: relative;
     overflow: hidden; 
     align-items: center;
+    transition: background-color 0.3s ease; /* Add a transition effect for the background color */
+    border-radius: 15px;
 }
 
 .sample-cake img {
@@ -212,8 +214,118 @@ footer {
     font-weight: bold;
     font-size: 16px;
     box-sizing: border-box; /* Include padding and border in width/height calculations */
+    border-bottom: 15px;
+}
+
+
+
+.sample-cake:hover {
+    background-color: #ccc; /* Apply grey background on hover */
+    overflow: hidden;
     border-radius: 15px;
 }
+
+.sample-cake img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.sample-cake:hover .cake-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cake-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Use rgba to set a transparent grey background */
+    display: none;
+}
+
+.cake-info .plus-icon {
+    font-size: 55px; /* Adjust the font size for the PLUS icon */
+    color: #fff; /* Set the color of the PLUS icon */
+    cursor: pointer;
+}
+
+.cart-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+.cart-icon img {
+    width: 50px; /* Adjust the width to make the icon smaller */
+    height: 50px; /* Adjust the height accordingly */
+}
+
+/* Add this CSS for the cart pop-out window */
+.cart-popup {
+    position: fixed;
+    top: 0;
+    right: -500px; /* Initial position, adjust as needed */
+    width: 480px; /* Adjust the width of your cart */
+    height: 100%;
+    background-color: #494646; /* Adjust the background color */
+    transition: right 0.5s ease; /* Add transition for smooth sliding */
+    overflow-y: auto; /* Add overflow-y to allow vertical scrolling */
+}
+
+.cart-popup-content {
+    padding: 15px;
+    margin: 60px auto;
+    color: #fff;
+    font-size: 20px;
+    max-height: 80vh; /* Limit the maximum height of the cart content */
+}
+
+/* Add this if you want a button to close the cart */
+.close-cart {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+
+.delete-icon {
+    cursor: pointer;
+    color: #fa4a4a; /* Set the color of the delete icon */
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.cart-cake-image {
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    margin-right: 10px; /* Adjust the spacing between the image and other details */
+    border-radius: 5px; /* Add border-radius for rounded corners if desired */
+}
+
+.shopping-cart-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px; /* Adjust the font size as needed */
+    font-weight: bold; /* Add bold if desired */
+    color: #ffffff; /* Adjust the color as needed */
+    margin-top: 25px; /* Adjust the margin as needed */
+    padding-left: 161px ;
+}
+
+.empty-cart-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px; /* Adjust the font size as needed */
+    font-weight: bold; /* Add bold if desired */
+    color: #ffffff; /* Adjust the color as needed */
+    margin-top: 250px; /* Adjust the margin as needed */
+    padding-left: 151px ;
+}
+
 
 .grey-line {
     height: 2px;
@@ -237,6 +349,8 @@ footer {
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
+    margin-top: 17px;
+    margin-bottom: 17px;
     
 }
 
@@ -306,7 +420,7 @@ footer {
 }
 
 .background-image-container3 {
-    background-image: url('photos/cake background6.jpg');
+    background-image: url('photos/cake background3.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -329,6 +443,17 @@ footer {
     overflow-x: hidden;
 }
 
+.background-image-container5 {
+    background-image: url('photos/background\ 5.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-x: hidden;
+}
 
 /* Style for the "About Us" banner */
 .about-banner {
@@ -372,7 +497,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     background-color: #746060;
-    margin: 1% auto;
+    margin: 5% auto;
     padding: 20px;
     width: 70%;
     max-width: 750px;

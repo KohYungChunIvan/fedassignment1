@@ -22,6 +22,10 @@
                         <li><a href="Customised Cake.html" class="cakes-link">Customized Cake</a></li>
                         <li><a href="Durian Cake.html" class="cakes-link">Durian Cake</a></li>
                         <li><a href="Contact.html" class="cakes-link">Contact</a></li>
+                        <div class="cart-icon" onclick="toggleCart()">
+                            <img src="photos/shopping-cart.png" alt="Shopping Cart">
+                            <span id="cart-count">0</span>
+                        </div>
                     </ul>
                 </nav>
             </div>
@@ -71,8 +75,15 @@
             </p>
         </div>
     </div>
+    <div class="cart-popup" style="right: -500px;">
+        <div class="shopping-cart-title">Shopping Cart</div>
+        <div class="empty-cart-title">Your Cart is Empty</div>
+        <div class="cart-popup-content">
+        </div>
+        <div class="close-cart" onclick="toggleCart()">X</div>
+    </div>
+    
 
-</body>
 
 <footer>
     <div class="about-container">
@@ -103,4 +114,7 @@
         </div>
     </div>
 </footer>
+<script src="java script.js" defer></script>
+</body>
+
 </html>

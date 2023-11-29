@@ -122,6 +122,7 @@ function addToCart(cakeName, clickedElement) {
     console.log('Cake added to cart:', cakeName, 'Price:', price);
 }
 
+
 function updateCartCount() {
     const cartCount = document.getElementById('cart-count');
     cartCount.textContent = cart.length;
@@ -131,6 +132,7 @@ function updateCartCount() {
 function updateCartPopupContent() {
     const cartPopupContent = document.querySelector('.cart-popup-content');
     const emptyCartMessage = document.querySelector('.empty-cart-title');
+    let totalPrice = 0;
 
     // Clear existing content
     cartPopupContent.innerHTML = '';
@@ -175,6 +177,9 @@ function updateCartPopupContent() {
             const priceSpan = document.createElement('span');
             priceSpan.textContent = `$${cake.price.toFixed(2)}`; // Display the price with 2 decimal places
 
+            // Calculate total price
+            totalPrice += cake.price;
+
             // Append the delete icon, cake image, and info container to the cart item
             cartItem.appendChild(deleteIcon);
             cartItem.appendChild(cakeImage);
@@ -190,8 +195,17 @@ function updateCartPopupContent() {
             // Append the cart item to the cart popup content
             cartPopupContent.appendChild(cartItem);
         });
+
+        // Create and append the total price element after the loop
+        const totalPriceElement = document.createElement('div');
+        totalPriceElement.className = 'total-price';
+        totalPriceElement.innerHTML = `<strong>Total Price: </strong> $${totalPrice.toFixed(2)}`;
+        totalPriceElement.style.paddingBlockEnd = '70px';
+        cartPopupContent.appendChild(totalPriceElement);
     }
 }
+
+
 
 function deleteCakeFromCart(event) {
     const index = event.target.getAttribute('data-index');
@@ -221,6 +235,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
 
 
 function toggleCart() {

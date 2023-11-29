@@ -16,7 +16,7 @@ body {
 }
 header {
     background-color: rgb(0, 0, 0); /* White background for the header */
-    color: #fff;
+    color: gold;
     text-align: center;
     font-size: 30px;
     font-family: 'Dancing Script', cursive; /* Use the curly font here */
@@ -254,7 +254,7 @@ footer {
 }
 
 .cart-icon {
-    position: fixed;
+    position: absolute;
     top: 20px;
     right: 20px;
     cursor: pointer;
@@ -287,10 +287,11 @@ footer {
 /* Add this if you want a button to close the cart */
 .close-cart {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 21px;
+    right: 22px;
     cursor: pointer;
     color: #ffffff;
+    font-size: 20px;
 }
 
 
@@ -314,7 +315,7 @@ footer {
     font-weight: bold; /* Add bold if desired */
     color: #ffffff; /* Adjust the color as needed */
     margin-top: 25px; /* Adjust the margin as needed */
-    padding-left: 161px ;
+    padding-left: 160px ;
 }
 
 .empty-cart-title {
@@ -359,6 +360,7 @@ footer {
     color: rgb(255, 255, 255);
     padding: 0px;
     margin: 20px auto;
+    margin-top: 50px;
 
 }
 

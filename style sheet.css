@@ -332,6 +332,7 @@ footer {
     cursor: pointer; /* Change cursor to pointer on hover */
     color: #fa4a4a; /* Set the color of the delete icon */
     margin-right: 10px; /* Add right margin */
+    padding-right: 5px; /* Add right padding */
     font-size: 24px; /* Set font size */
 }
 
@@ -507,7 +508,7 @@ footer {
 }
 
 .background-image-container5 {
-    background-image: url('photos/background\ 5.jpg');
+    background-image: url('photos/cake background\ 5.jpg');
     background-size: cover; /* Set background size to cover */
     background-position: center; /* Set background position to center */
     background-attachment: fixed; /* Fix the background position */

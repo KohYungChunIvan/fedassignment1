@@ -1,49 +1,77 @@
+// Image slideshow logic
 let slideIndex = 0;
 showSlides();
 
+// Function to start the image slideshow
 function showSlides() {
     let i;
     let slides = document.getElementsByClassName("mySlides");
     let dots = document.getElementsByClassName("dot");
+
+    // Hide all slides and remove active class from dots
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
         dots[i].classList.remove("active");
     }
+
+    // Move to the next slide
     slideIndex++;
+
+    // Reset to the first slide if at the end
     if (slideIndex > slides.length) {
         slideIndex = 1;
     }
+
+    // Display the current slide and set active class to corresponding dot
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].classList.add("active");
-    setTimeout(showSlides, 5000); // Change image every 5 seconds (5000 milliseconds)
+        
+    // Call the function recursively after 5 seconds
+    setTimeout(showSlides, 5000); 
 }
 
+// Function to show a specific slide when a dot is clicked
 function currentSlide(n) {
     showSlide(slideIndex = n);
 }
 
+
+// Function to show a specific slide
 function showSlide(n) {
     let i;
     let slides = document.getElementsByClassName("mySlides");
     let dots = document.getElementsByClassName("dot");
+
+    // Reset to the first slide if at the end
     if (n > slides.length) {
         slideIndex = 1;
     }
+
+    // Reset to the last slide if at the beginning
     if (n < 1) {
         slideIndex = slides.length;
     }
+
+    // Hide all slides and remove active class from dots
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
         dots[i].classList.remove("active");
     }
+
+    // Display the current slide and set active class to corresponding dot
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].classList.add("active");
 }
+
+
+// Redirect to the homepage when a link is clicked
 document.getElementById('home-link').addEventListener('click', function() {
 // Redirect to the homepage (index.html)
 window.location.href = 'index.html';
 });
 
+
+// Video play/pause based on visibility in the viewport
 const videoContainer = document.getElementById('video-container');
 const localVideo = document.getElementById('local-video');
 
@@ -99,6 +127,8 @@ document.getElementById('customForm').addEventListener('submit', function (event
     resetForm();
 });
 
+
+
 // Cart functionality
 // Cart array initialization
 var cart = [];
@@ -114,21 +144,26 @@ function addToCart(cakeName, clickedElement) {
     const priceTag = clickedElement.parentElement.parentElement.querySelector('.price-tag');
     const price = parseFloat(priceTag.textContent.replace('$', ''));
 
+    // Add cake details to the cart array
     cart.push({ name: cakeName, price: price });
+
+    // Update cart count and popup content
     updateCartCount();
     updateCartPopupContent();
 
-    // You can add other actions if needed
+    // Log the action
     console.log('Cake added to cart:', cakeName, 'Price:', price);
 }
 
 
+// Update cart count displayed on the page
 function updateCartCount() {
     const cartCount = document.getElementById('cart-count');
     cartCount.textContent = cart.length;
 }
 
 
+// Update cart popup content displayed on the page
 function updateCartPopupContent() {
     const cartPopupContent = document.querySelector('.cart-popup-content');
     const emptyCartMessage = document.querySelector('.empty-cart-title');
@@ -150,12 +185,12 @@ function updateCartPopupContent() {
             cartItem.className = 'cart-item';
             cartItem.style.display = 'flex'; // Set display to flex
             cartItem.style.alignItems = 'center'; // Center items vertically
-            cartItem.style.marginBottom = '15px'; // You can adjust the spacing as needed
+            cartItem.style.marginBottom = '15px'; // adjust the spacing 
             cartItem.style.paddingBlockEnd = '30px';
 
             // Create a delete icon
             const deleteIcon = document.createElement('span');
-            deleteIcon.innerHTML = '&minus;'; // This is the "x" symbol
+            deleteIcon.innerHTML = '&minus;'; // This is the "-" symbol
             deleteIcon.className = 'delete-icon';
             deleteIcon.setAttribute('data-index', index); // Save the index for deletion
             deleteIcon.addEventListener('click', deleteCakeFromCart);
@@ -175,7 +210,9 @@ function updateCartPopupContent() {
 
             // Create a span for the price
             const priceSpan = document.createElement('span');
-            priceSpan.textContent = `$${cake.price.toFixed(2)}`; // Display the price with 2 decimal places
+
+            // Display the price with 2 decimal places
+            priceSpan.textContent = `$${cake.price.toFixed(2)}`; 
 
             // Calculate total price
             totalPrice += cake.price;
@@ -207,6 +244,7 @@ function updateCartPopupContent() {
 
 
 
+// Function to delete a cake from the cart
 function deleteCakeFromCart(event) {
     const index = event.target.getAttribute('data-index');
     
@@ -218,6 +256,8 @@ function deleteCakeFromCart(event) {
     updateCartPopupContent();
 }
 
+
+// Event listener for plus icons (add to cart)
 document.addEventListener('DOMContentLoaded', function() {
     // Get all elements with class 'plus-icon'
     const plusIcons = document.querySelectorAll('.plus-icon');
@@ -228,7 +268,9 @@ document.addEventListener('DOMContentLoaded', function() {
             // Get the cake name associated with the clicked plus icon
             const cakeName = this.getAttribute('data-cake-name');
             // Get the price from the data-price attribute
-            const price = parseFloat(this.getAttribute('data-price')); // Parse the price as a float
+
+            // Parse/Convert the price as a float
+            const price = parseFloat(this.getAttribute('data-price')); 
 
             // Add the cake to the cart
             addToCart(cakeName, price);
@@ -237,7 +279,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-
+// Function to toggle the visibility of the cart popup
 function toggleCart() {
     const cartPopup = document.querySelector('.cart-popup');
     cartPopup.style.right = cartPopup.style.right === '0px' ? '-500px' : '0px';

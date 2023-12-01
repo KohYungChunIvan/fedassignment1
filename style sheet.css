@@ -1,307 +1,341 @@
-
-/* Add your custom styles here */
 body {
-    font-family: 'Arial', sans-serif;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-color: rgb(203, 203, 203);  
-    margin: 0;
-    padding: 0;
-    color: #fff
+    font-family: 'Arial', sans-serif; /* Use Arial font */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background */
+    background-attachment: fixed; /* Fix the background while scrolling */
+    background-color: rgb(203, 203, 203); /* Light gray background color */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    color: #fff; /* White text color */
 } 
 
+/* Set styles for the main content container */
 .container {
-    overflow-x: hidden;
+    overflow-x: hidden; /* Hide horizontal overflow */
 }
+
+/* Styles for the header section */
 header {
-    background-color: rgb(0, 0, 0); /* White background for the header */
-    color: gold;
-    text-align: center;
-    font-size: 30px;
-    font-family: 'Dancing Script', cursive; /* Use the curly font here */
-    position: relative;
+    background-color: rgb(0, 0, 0); /* Black background for the header */
+    color: gold; /* Gold text color */
+    text-align: center; /* Center-align text */
+    font-size: 30px; /* Set font size */
+    font-family: 'Dancing Script', cursive; /* Use the Dancing Script font */
+    position: relative; /* Relative positioning for child elements */
 }
+
+/* Styles for the logo in the header */
 .logo {
     display: block;
     margin: 0 auto; /* Center the logo horizontally */
-    max-width: 150px; /* Adjust the max-width as needed */
-    padding: 10px 0; /* Add padding to create the white banner */
+    max-width: 150px; /* Limit the max width of the logo */
+    padding: 10px 0; /* Add padding to create a white banner */
 }
+
+/* Styles for the navigation bar */
 .nav-bar {
-    padding: 1px;
-    
+    padding: 1px; /* Add padding to space out the navigation bar */
 }
+
+/* Styles for the navigation menu */
 nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    text-align: center; /* Center-align text in the navigation menu */
 }
+
 nav li {
-    display: inline;
-    margin: auto 20px;
+    display: inline; /* Display list items inline */
+    margin: auto 20px; /* Add margin to each list item */
 }
 
-
+/* Styles for navigation links */
 nav a {
-    text-decoration: none;
+    text-decoration: none; /* Remove text decoration */
     color: #000; /* Black text color */
-    font-weight: bold;
+    font-weight: bold; /* Set font weight to bold */
 }
 
-
-
+/* Styles for the slideshow container */
 .slideshow-container {
-    max-width: 750px;
-    height: 430px;
-    text-align: center;
-    margin: 0 auto;
-    position: relative; /* Add relative positioning to contain the dots */
+    max-width: 750px; /* Limit the max width of the slideshow container */
+    height: 430px; /* Set height for the slideshow container */
+    text-align: center; /* Center-align text in the slideshow container */
+    margin: 0 auto; /* Center the slideshow container horizontally */
+    position: relative; /* Relative positioning for child elements */
 }
+
 .slideshow-container img {
     width: 100%; /* Set maximum width for slider images */
-    height: 430px;
-    object-fit: cover;
+    height: 430px; /* Set height for slider images */
+    object-fit: cover; /* Cover the entire container with images */
 }
 
+/* Styles for the button container */
 .button-container {
-    text-align: center;
-    position: relative;
-    z-index: 1;
-    margin-top: 20px;
-    padding: 20px 0;
+    text-align: center; /* Center-align text in the button container */
+    position: relative; /* Relative positioning for child elements */
+    z-index: 1; /* Set the stacking order */
+    margin-top: 20px; /* Add top margin */
+    padding: 20px 0; /* Add padding to the button container */
 }
+
+/* Styles for custom buttons */
 .custom-button {
-    text-decoration: none;
-    color: #fff;
-    background-color: #ff8c00;
-    padding: 15px 30px;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 20px;
-    border: none; /* Add this line */
+    text-decoration: none; /* Remove text decoration */
+    color: #fff; /* White text color */
+    background-color: #ff8c00; /* Orange background color */
+    padding: 15px 30px; /* Set padding for the buttons */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+    font-weight: bold; /* Set font weight to bold */
+    font-size: 20px; /* Set font size */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Add pointer cursor on hover */
 }
+
+/* Styles for slider dots */
 .slider-dots {
-    text-align: center;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
+    text-align: center; /* Center-align text in the slider dots */
+    margin-top: 20px; /* Add top margin */
+    display: flex; /* Display dots as flex items */
+    justify-content: center; /* Center-align dots horizontally */
 }
+
 .dot {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: #ffffff;
-    display: inline-block;
-    margin: 0 5px;
-    cursor: pointer;
+    width: 15px; /* Set width for dots */
+    height: 15px; /* Set height for dots */
+    border-radius: 50%; /* Create circular dots */
+    background-color: #ffffff; /* White dot color */
+    display: inline-block; /* Display dots as inline blocks */
+    margin: 0 5px; /* Add margin between dots */
+    cursor: pointer; /* Add pointer cursor on hover */
 }
+
 .dot.active {
-    background-color: #4a4747;
+    background-color: #4a4747; /* Darker color for active dot */
 }
 
-
-
+/* Styles for the store image container */
 .storeimage-container {
-    max-width: 800px;
-    margin-right: 20px;
-    height: 390px;
-    text-align: right;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    
+    max-width: 800px; /* Limit the max width of the store image container */
+    margin-right: 20px; /* Add right margin */
+    height: 390px; /* Set height for the store image container */
+    text-align: right; /* Right-align text in the store image container */
+    overflow: hidden; /* Hide overflow content */
+    display: flex; /* Display container as flex */
+    align-items: center; /* Center-align items vertically */
 }
 
 .storeimage-container img {
-    width: 100%; /* Set maximum width for slider images */
-    height: 390px;
-    object-fit: cover;
-    position: relative;
-    margin: 0px;
-    overflow: hidden;
+    width: 100%; /* Set maximum width for store images */
+    height: 390px; /* Set height for store images */
+    object-fit: cover; /* Cover the entire container with images */
+    position: relative; /* Relative positioning for child elements */
+    margin: 0px; /* Remove default margin */
+    overflow: hidden; /* Hide overflow content */
 }
 
-.storedescription-container{
-    flex: 1;
-    text-align: right;
-    padding-right: 20px;
-    position: absolute;
-    color: #000000;
+/* Styles for the store description container */
+.storedescription-container {
+    flex: 1; /* Allow flexible sizing */
+    text-align: right; /* Right-align text in the store description container */
+    padding-right: 20px; /* Add right padding */
+    position: absolute; /* Absolute positioning for accurate placement */
+    color: #000000; /* Black text color */
 }
 
 .storedescription-container h3 {
-    text-align: left;
-    padding-left: 825px;
+    text-align: left; /* Left-align heading text */
+    padding-left: 825px; /* Add left padding */
 }
 
-.storedescription-container p{
-    padding-left: 829px;
-    padding-right: 11px;
-    text-align: left;
-    margin-top: 40px;
+.storedescription-container p {
+    padding-left: 829px; /* Add left padding */
+    padding-right: 11px; /* Add right padding */
+    text-align: left; /* Left-align paragraph text */
+    margin-top: 40px; /* Add top margin */
 }
 
-
-
-
+/* Styles for the footer section */
 footer {
-    background-color: rgb(29, 29, 22);
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    font-size: 14px;
-    max-width: 0 auto;
-    margin: 0 auto;
+    background-color: rgb(29, 29, 22); /* Dark background color for the footer */
+    color: #fff; /* White text color */
+    padding: 10px; /* Add padding to the footer */
+    text-align: center; /* Center-align text in the footer */
+    font-size: 14px; /* Set font size */
+    max-width: 0 auto; /* Limit the max width of the footer */
+    margin: 0 auto; /* Center the footer horizontally */
 }
+
+
+/* Styles for links with class "cakes-link" */
 .cakes-link {
-    color: #ffffff; 
+    color: #ffffff; /* Set the text color to white for links with this class */
 }
+
+/* Styles for concierge information */
 .concierge-info {
-    text-align: center;
-    margin-top: 20px;
-    color: #fff;
-    font-size: 18px;
-    padding: 2px;
+    text-align: center; /* Center-align text */
+    margin-top: 20px; /* Add top margin */
+    color: #fff; /* White text color */
+    font-size: 18px; /* Set font size */
+    padding: 2px; /* Add padding */
 }
+
+/* Styles for the video container */
 .video-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60vh;
-    margin: 10px 0;
-    padding: 10px;
+    display: flex; /* Display as flex container */
+    justify-content: center; /* Center-align content horizontally */
+    align-items: center; /* Center-align content vertically */
+    height: 60vh; /* Set the height of the container */
+    margin: 10px 0; /* Add top and bottom margin */
+    padding: 10px; /* Add padding */
 }
+
+/* Styles for a container with a white background */
 .white-container {
-    background-color: #fff;
-    padding: 20px;
-    text-align: center;
+    background-color: #fff; /* Set background color to white */
+    padding: 20px; /* Add padding */
+    text-align: center; /* Center-align text */
 }
+
+/* Styles for a container with sample cakes */
 .sample-cakes-container {
-    color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 0px;
+    color: #000; /* Black text color */
+    display: flex; /* Display as flex container */
+    justify-content: center; /* Center-align content horizontally */
+    align-items: center; /* Center-align content vertically */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    width: 100%; /* Set width to 100% */
 }
+
+/* Styles for individual sample cakes */
 .sample-cake {
-    flex: 0 0 calc(50% - 20px);
-    margin: 10px;
-    position: relative;
-    overflow: hidden; 
-    align-items: center;
+    flex: 0 0 calc(50% - 20px); /* Set flexible sizing for responsive design */
+    margin: 10px; /* Add margin around each sample cake */
+    position: relative; /* Relative positioning for child elements */
+    overflow: hidden; /* Hide overflow content */
+    align-items: center; /* Center-align items vertically */
     transition: background-color 0.3s ease; /* Add a transition effect for the background color */
-    border-radius: 15px;
+    border-radius: 15px; /* Add border-radius for rounded corners */
 }
 
+/* Styles for images inside sample cakes */
 .sample-cake img {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%; /* Set maximum width for images */
+    height: auto; /* Set height to auto for proportional scaling */
     display: block; /* Remove any potential extra spacing */
-    border-radius: 15px;
+    border-radius: 15px; /* Add border-radius for rounded corners */
 }
 
+/* Styles for the name of the cake within the sample cake */
 .cake-name {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 5px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 16px;
+    position: absolute; /* Absolute positioning for accurate placement */
+    bottom: 0; /* Align the bottom of the cake name */
+    left: 0; /* Align the left of the cake name */
+    width: 100%; /* Set width to 100% */
+    background-color: rgba(255, 255, 255, 0.8); /*set background color*/
+    padding: 5px; /* Add padding */
+    text-align: center; /* Center-align text */
+    font-weight: bold; /* Set font weight to bold */
+    font-size: 16px; /* Set font size */
     box-sizing: border-box; /* Include padding and border in width/height calculations */
-    border-bottom: 15px;
+    border-bottom: 15px; /* Add bottom border */
 }
 
 
-
+/* Styles for the sample cake on hover */
 .sample-cake:hover {
     background-color: #ccc; /* Apply grey background on hover */
-    overflow: hidden;
-    border-radius: 15px;
+    overflow: hidden; /* Hide overflow content */
+    border-radius: 15px; /* Add border-radius for rounded corners */
 }
 
+/* Styles for images inside the sample cake */
 .sample-cake img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+    max-width: 100%; /* Set maximum width for images */
+    height: auto; /* Set height to auto for proportional scaling */
+    display: block; /* Remove any potential extra spacing */
 }
 
+/* Styles for the cake info on hover */
 .sample-cake:hover .cake-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex; /* Display as flex container */
+    justify-content: center; /* Center-align content horizontally */
+    align-items: center; /* Center-align content vertically */
 }
 
+/* Styles for the cake information container */
 .cake-info {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Use rgba to set a transparent grey background */
-    display: none;
+    position: absolute; /* Absolute positioning for accurate placement */
+    top: 0; /* Align the top of the container */
+    left: 0; /* Align the left of the container */
+    width: 100%; /* Set width to 100% */
+    height: 100%; /* Set height to 100% */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent grey background */
+    display: none; /* Initially hide the container */
 }
 
+/* Styles for the plus icon within the cake information container */
 .cake-info .plus-icon {
     font-size: 55px; /* Adjust the font size for the PLUS icon */
     color: #fff; /* Set the color of the PLUS icon */
-    cursor: pointer;
+    cursor: pointer; /* Change cursor to pointer on hover */
 }
 
+/* Styles for the shopping cart icon */
 .cart-icon {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
+    position: absolute; /* Absolute positioning for accurate placement */
+    top: 20px; /* Set top position */
+    right: 20px; /* Set right position */
+    cursor: pointer; /* Change cursor to pointer on hover */
 }
+
 .cart-icon img {
     width: 50px; /* Adjust the width to make the icon smaller */
     height: 50px; /* Adjust the height accordingly */
 }
 
-/* Add this CSS for the cart pop-out window */
+/* Styles for the cart pop-out window */
 .cart-popup {
-    position: fixed;
-    top: 0;
+    position: fixed; /* Fixed positioning for overlay effect */
+    top: 0; /* Align the top of the window */
     right: -500px; /* Initial position, adjust as needed */
-    width: 480px; /* Adjust the width of your cart */
-    height: 100%;
-    background-color: #494646; /* Adjust the background color */
+    width: 480px; /* Adjust the width of the cart */
+    height: 100%; /* Set height to 100% */
+    background-color: #494646; /* Set background color of the cart */
     transition: right 0.5s ease; /* Add transition for smooth sliding */
     overflow-y: auto; /* Add overflow-y to allow vertical scrolling */
 }
 
+/* Styles for the content inside the cart pop-up window */
 .cart-popup-content {
-    padding: 15px;
-    margin: 60px auto;
-    color: #fff;
-    font-size: 20px;
+    padding: 15px; /* Add padding */
+    margin: 60px auto; /* Center the content horizontally */
+    color: #fff; /* White text color */
+    font-size: 20px; /* Set font size */
     max-height: 80vh; /* Limit the maximum height of the cart content */
 }
 
-/* Add this if you want a button to close the cart */
+/* Styles for the button to close the cart */
 .close-cart {
-    position: absolute;
-    top: 21px;
-    right: 22px;
-    cursor: pointer;
-    color: #ffffff;
-    font-size: 20px;
+    position: absolute; /* Absolute positioning for accurate placement */
+    top: 21px; /* Set top position */
+    right: 22px; /* Set right position */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    color: #ffffff; /* White text color */
+    font-size: 20px; /* Set font size */
 }
 
-
+/* Styles for the delete icon in the cart */
 .delete-icon {
-    cursor: pointer;
+    cursor: pointer; /* Change cursor to pointer on hover */
     color: #fa4a4a; /* Set the color of the delete icon */
-    margin-right: 10px;
-    font-size: 24px;
+    margin-right: 10px; /* Add right margin */
+    font-size: 24px; /* Set font size */
 }
 
+/* Styles for the cake image in the shopping cart */
 .cart-cake-image {
     width: 100px; /* Adjust the width as needed */
     height: 100px; /* Adjust the height as needed */
@@ -309,293 +343,311 @@ footer {
     border-radius: 5px; /* Add border-radius for rounded corners if desired */
 }
 
+/* Styles for the title of the shopping cart */
 .shopping-cart-title {
-    font-family: 'Dancing Script', cursive;
-    font-size: 30px; /* Adjust the font size as needed */
-    font-weight: bold; /* Add bold if desired */
-    color: #ffffff; /* Adjust the color as needed */
-    margin-top: 25px; /* Adjust the margin as needed */
-    padding-left: 160px ;
+    font-family: 'Dancing Script', cursive; /* Use the specified font */
+    font-size: 30px; /* Set font size */
+    font-weight: bold; /* Set font weight to bold */
+    color: #ffffff; /* White text color */
+    margin-top: 25px; /* Adjust the top margin */
+    padding-left: 160px; /* Adjust the left padding */
 }
 
+/* Styles for the title when the shopping cart is empty */
 .empty-cart-title {
-    font-family: 'Dancing Script', cursive;
-    font-size: 25px; /* Adjust the font size as needed */
-    font-weight: bold; /* Add bold if desired */
-    color: #ffffff; /* Adjust the color as needed */
-    margin-top: 250px; /* Adjust the margin as needed */
-    padding-left: 151px ;
+    font-family: 'Dancing Script', cursive; /* Use the specified font */
+    font-size: 25px; /* Set font size */
+    font-weight: bold; /* Set font weight to bold */
+    color: #ffffff; /* White text color */
+    margin-top: 250px; /* Adjust the top margin */
+    padding-left: 151px; /* Adjust the left padding */
 }
 
 
+/* Style for a grey horizontal line */
 .grey-line {
-    height: 2px;
-    background-color: #ccc;
-    margin: 20px 0;
+    height: 2px; /* Set the height of the line */
+    background-color: #ccc; /* Set the background color of the line */
+    margin: 20px 0; /* Add margin above and below the line */
 }
+
+/* Styles for social icons */
 .social-icons {
-    margin-top: 20px;
-    text-align: center;
+    margin-top: 20px; /* Add top margin for social icons */
+    text-align: center; /* Center-align social icons */
 }
+
 .social-icons a {
-    margin: 10px;
-    display: inline-block;
+    margin: 10px; /* Add margin around social icons */
+    display: inline-block; /* Display social icons in a row */
 }
+
 .social-icons img {
-    max-width: 30px;
-    height: auto;
+    max-width: 30px; /* Set maximum width for social icons */
+    height: auto; /* Set height to auto for proportional scaling */
 }
 
+/* Styles for the about container */
 .about-container {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-    margin-top: 17px;
-    margin-bottom: 17px;
-    
+    text-align: center; /* Center-align content in the about container */
+    max-width: 800px; /* Set maximum width for the about container */
+    margin: 0 auto; /* Center the about container horizontally */
+    margin-top: 17px; /* Add top margin for the about container */
+    margin-bottom: 17px; /* Add bottom margin for the about container */
 }
 
-.about-container-bar h2{
-    max-width: fit-content;
-    color: rgb(255, 255, 255);
-    padding: 0px;
-    margin: 20px auto;
-    margin-top: 50px;
-
+/* Styles for headings within the about container bar */
+.about-container-bar h2 {
+    max-width: fit-content; /* Set maximum width for the heading */
+    color: rgb(255, 255, 255); /* Set text color for the heading */
+    padding: 0; /* Remove padding */
+    margin: 20px auto; /* Center the heading horizontally with top margin */
+    margin-top: 50px; /* Add additional top margin */
 }
 
 .about-container-bar h4 {
-    color: rgb(255, 255, 255);
-    max-width: fit-content;
-    margin: auto ;
-    padding: 10px;
-    margin-bottom: 0px;
+    color: rgb(255, 255, 255); /* Set text color for subheadings */
+    max-width: fit-content; /* Set maximum width for subheadings */
+    margin: auto; /* Center-align subheadings horizontally */
+    padding: 10px; /* Add padding around subheadings */
+    margin-bottom: 0px; /* Remove bottom margin for subheadings */
 }
 
 .about-container-bar {
-    max-width: 800px;
-    text-align: center;
+    max-width: 800px; /* Set maximum width for the about container bar */
+    text-align: center; /* Center-align content in the about container bar */
 }
 
+/* Styles for the image row */
 .image-row {
-    display: flex;
-    justify-content: space-between;
-    margin: 50px auto;
+    display: flex; /* Display images in a row */
+    justify-content: space-between; /* Add space between images */
+    margin: 50px auto; /* Center-align image row horizontally with margin */
 }
 
 .image-row img {
-    width: 100%; /* Adjust the width as needed */
-    height: 100px;
-    object-fit: contain;
+    width: 100%; /* Set width to 100% for responsive images */
+    height: 100px; /* Set fixed height for images */
+    object-fit: contain; /* Maintain aspect ratio for images */
 }
 
 .image-row p {
-    margin-top: 10px;
+    margin-top: 10px; /* Add top margin for paragraphs within the image row */
 }
-
 
 
 
 /* Add a new style for the background image container */
 .background-image-container1 {
     background-image: url('photos/cake background1.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-color: transparent;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    overflow-x: hidden;
+    background-size: cover; /* Set background size to cover */
+    background-position: center; /* Set background position to center */
+    background-attachment: fixed; /* Fix the background position */
+    background-color: transparent; /* Set transparent background color */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    position: relative; /* Set relative positioning for the container */
+    overflow-x: hidden; /* Hide horizontal overflow */
 }
 
 .background-image-container2 {
     background-image: url('photos/cake background2.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-color: transparent;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    overflow-x: hidden;
+    background-size: cover; /* Set background size to cover */
+    background-position: center; /* Set background position to center */
+    background-attachment: fixed; /* Fix the background position */
+    background-color: transparent; /* Set transparent background color */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    position: relative; /* Set relative positioning for the container */
+    overflow-x: hidden; /* Hide horizontal overflow */
 }
 
 .background-image-container3 {
     background-image: url('photos/cake background3.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-color: transparent;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    overflow-x: hidden;
+    background-size: cover; /* Set background size to cover */
+    background-position: center; /* Set background position to center */
+    background-attachment: fixed; /* Fix the background position */
+    background-color: transparent; /* Set transparent background color */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    position: relative; /* Set relative positioning for the container */
+    overflow-x: hidden; /* Hide horizontal overflow */
 }
+
 
 .background-image-container4 {
     background-image: url('photos/cake\ background4.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-color: transparent;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    overflow-x: hidden;
+    background-size: cover; /* Set background size to cover */
+    background-position: center; /* Set background position to center */
+    background-attachment: fixed; /* Fix the background position */
+    background-color: transparent; /* Set transparent background color */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    position: relative; /* Set relative positioning for the container */
+    overflow-x: hidden; /* Hide horizontal overflow */
 }
 
 .background-image-container5 {
     background-image: url('photos/background\ 5.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-color: transparent;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    overflow-x: hidden;
+    background-size: cover; /* Set background size to cover */
+    background-position: center; /* Set background position to center */
+    background-attachment: fixed; /* Fix the background position */
+    background-color: transparent; /* Set transparent background color */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    position: relative; /* Set relative positioning for the container */
+    overflow-x: hidden; /* Hide horizontal overflow */
 }
 
-/* Style for the "About Us" banner */
+/* Styles for the "About Us" banner */
 .about-banner {
-    background-color: white;
-    padding: 20px 0;
-    text-align: center;
+    background-color: white; /* Set background color for the banner */
+    padding: 20px 0; /* Add padding to the banner */
+    text-align: center; /* Center-align content in the banner */
 }
 
+/* Styles for underlined links */
 .underline-link {
-    position: relative;
+    position: relative; /* Set relative positioning for the link */
 }
 
 .underline-link:after {
-    content: "";
-    position: absolute;
-    width: 100%;
+    content: ""; /* Create an empty content pseudo-element */
+    position: absolute; /* Set absolute positioning for the underline */
+    width: 100%; /* Set width to 100% */
     height: 1px; /* Adjust the thickness of the underline as needed */
     background-color: rgb(236, 169, 61); /* Set the color of the underline */
     bottom: -5px; /* Adjust the distance between the link text and the underline */
-    left: 0;
-    display: block;
-
+    left: 0; /* Align the underline with the left edge of the link */
+    display: block; /* Display as a block element */
 }
-
 
 
 /* Pop-up Styles */
 
+/* Style for a basic pop-up content */
 .popup-content {
-    display: none;
-    background-color: #746060;
-    margin: 1% auto;
-    padding: 20px;
-    width: 70%;
-    max-width: 500px;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(45, 44, 44, 0.1);
+    display: none; /* Initially hide the pop-up content */
+    background-color: #746060; /* Set the background color of the pop-up */
+    margin: 1% auto; /* Add margin and center horizontally */
+    padding: 20px; /* Add padding to the pop-up content */
+    width: 70%; /* Set the width of the pop-up content */
+    max-width: 500px; /* Set the maximum width of the pop-up content */
+    border-radius: 20px; /* Add border-radius for rounded corners */
+    box-shadow: 0 4px 8px rgba(45, 44, 44, 0.1); /* Add box shadow for a subtle effect */
 }
 
+/* Style for a flex-based pop-up content with wrapping */
 .popup-content2 {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #746060;
-    margin: 5% auto;
-    padding: 20px;
-    width: 70%;
-    max-width: 750px;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(45, 44, 44, 0.1);
+    display: flex; /* Use flex display for the pop-up content */
+    flex-wrap: wrap; /* Allow content to wrap to the next line */
+    background-color: #746060; /* Set the background color of the pop-up */
+    margin: 5% auto; /* Add margin and center horizontally */
+    padding: 20px; /* Add padding to the pop-up content */
+    width: 70%; /* Set the width of the pop-up content */
+    max-width: 750px; /* Set the maximum width of the pop-up content */
+    border-radius: 20px; /* Add border-radius for rounded corners */
+    box-shadow: 0 4px 8px rgba(45, 44, 44, 0.1); /* Add box shadow for a subtle effect */
 }
 
+/* Styles for the close button on hover and focus */
 .close:hover,
 .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
+    color: #000; /* Change text color on hover or focus */
+    text-decoration: none; /* Remove text decoration on hover or focus */
+    cursor: pointer; /* Change cursor to pointer on hover or focus */
 }
 
 /* Form Styles */
+
+/* Style for a form group with flex column layout */
 .form-group {
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
 }
 
+/* Style for form group labels */
 .form-group label {
     margin-bottom: 5px;
 }
 
+/* Styles for form group input and textarea */
 .form-group input,
 .form-group textarea {
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #332f2f;
-    border-radius: 4px;
+    padding: 8px; /* Add padding to input and textarea */
+    margin-bottom: 10px; /* Add bottom margin to input and textarea */
+    border: 1px solid #332f2f; /* Set border for input and textarea */
+    border-radius: 4px; /* Add border-radius for rounded corners */
 }
 
+/* Additional style for file input in form group */
 .form-group input[type="file"] {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Add extra bottom margin for file input */
 }
 
+/* Style for the container of submit button */
 .submit-container {
-    text-align: center;
+    text-align: center; /* Center-align the submit button container */
 }
 
+/* Style for the submit button */
 .submit-button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 10px 20px; /* Add padding to the submit button */
+    border: none; /* Remove border from the submit button */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+    cursor: pointer; /* Set cursor to pointer */
+    width: 100%; /* Make the button full width */
 }
 
+/* Style for the submit button on hover */
 .submit-button:hover {
-    background-color: #45a049;
+    background-color: #45a049; /* Change background color on hover */
+    cursor: pointer; /* Set cursor to pointer on hover */
 }
 
+/* Style for a form row with flex space-between layout */
 .form-row {
     display: flex;
     justify-content: space-between;
-    margin: 20px;
-    align-items: center;
+    margin: 20px; /* Add margin around the form row */
+    align-items: center; /* Align items in the center */
 }
+
+/* Style for a full-width form row */
 .form-row1 {
     display: flex;
     justify-content: space-between;
-    margin: 20px;
-    align-items: center;
-    width: 100%;
+    margin: 20px; /* Add margin around the form row */
+    align-items: center; /* Align items in the center */
+    width: 100%; /* Set the form row to full width */
 }
 
-/* Add this CSS to adjust the width of form fields for better responsiveness */
+/* Additional CSS to adjust the width of form fields for better responsiveness */
 .form-group2 {
-    flex: 0 0 calc(50% - 10px);
+    flex: 0 0 calc(50% - 10px); /* Set flex properties for a two-column layout */
 }
+
 .form-group3 {
-    flex: 0 0 calc(100% - 10px);
+    flex: 0 0 calc(100% - 10px); /* Set flex properties for a full-width layout */
 }
+
 .form-group2 input,
 .form-group2 textarea {
-    width: 300px; /* or any desired width */
-    padding: 10px; 
-    margin-bottom: 10px;
-    border: 1px solid #332f2f;
-    border-radius: 4px;
+    width: 300px; /* Set width for the input and textarea in the two-column layout */
+    padding: 10px; /* Add padding to the input and textarea */
+    margin-bottom: 10px; /* Add bottom margin to the input and textarea */
+    border: 1px solid #332f2f; /* Set border for input and textarea */
+    border-radius: 4px; /* Add border-radius for rounded corners */
 }
 
 .form-group3 input,
 .form-group3 textarea {
-    width: 687px; /* or any desired width */
-    padding: 10px; 
-    margin-bottom: 10px;
-    border: 1px solid #332f2f;
-    border-radius: 4px;
-}
-
-
-
-/* Adjust the width of the submit button for better responsiveness */
-.submit-button {
-    width: 100%; /* Make the button full width */
+    width: 687px; /* Set width for the input and textarea in the full-width layout */
+    padding: 10px; /* Add padding to the input and textarea */
+    margin-bottom: 10px; /* Add bottom margin to the input and textarea */
+    border: 1px solid #332f2f; /* Set border for input and textarea */
+    border-radius: 4px; /* Add border-radius for rounded corners */
 }
 
 
@@ -603,34 +655,32 @@ footer {
 /* Desktop View */
 @media (min-width: 769px) {
     .slideshow-container {
-        margin-top: 50px;
+        margin-top: 50px; /* Adjust top margin for the slideshow container on desktop */
     }
     .slideshow-container img {
-        height: 430px;
+        height: 430px; /* Set the height of slideshow images on desktop */
     }
     .sample-cake {
-        flex: 0 0 calc(33.33% - 20px);
-        margin: 10px;
+        flex: 0 0 calc(33.33% - 20px); /* Set the flex property for sample cakes on desktop */
+        margin: 10px; /* Adjust margin for sample cakes on desktop */
         position: relative;
         overflow: hidden;
     }
-
-    
 } 
 
 /* Mobile view */
 @media (max-width: 850px) {
    
-    .slider-dots{
-        margin-top: unset;
-        padding-top: 0px;
-        
+    .slider-dots {
+        margin-top: unset; /* Remove top margin for slider dots on mobile */
+        padding-top: 0px; /* Adjust padding for slider dots on mobile */
     }
+    
     .nav-bar {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 10px;
+        margin: 10px; /* Adjust margin for the navigation bar on mobile */
     }
 
     .mobile-nav {
@@ -640,176 +690,170 @@ footer {
     }
 
     .nav-item {
-        margin: 10px 0;
+        margin: 10px 0; /* Adjust margin for navigation items on mobile */
         text-align: center;
     }
+    
     nav li a {
         display: inline-block;
-        width: 34%;
-        margin: 11px 10px;  /* the thickness and the width in for nav bar for responsive */
+        width: 34%; /* Set the width for navigation links on mobile */
+        margin: 11px 10px;  /* Set margin for navigation links on mobile */
     }
     
     .slideshow-container {
-        margin-top: 20px;
-        margin-bottom: 0px;
-        
+        margin-top: 20px; /* Adjust top margin for slideshow container on mobile */
+        margin-bottom: 0px; /* Adjust bottom margin for slideshow container on mobile */
     }
+    
     .slideshow-container img {
-        height: 350px;
-        width: 91%;
-        object-fit: cover;
-        
+        height: 350px; /* Set height for slideshow images on mobile */
+        width: 91%; /* Set width for slideshow images on mobile */
+        object-fit: cover; /* Apply object-fit property for responsive image sizing */
     }
 
-
-
-    .storeimage-container{
-        flex-direction: column; /* Stack items vertically */
+    .storeimage-container {
+        flex-direction: column; /* Stack items vertically for store image container on mobile */
         width: 100%;
-        height: 620px;
+        height: 620px; /* Set height for store image container on mobile */
         display: flex;
     }
 
     .storeimage-container img {
-        height: 330px;
-        width: 93%;
-        margin-top: 20px;
-        
+        height: 330px; /* Set height for store images on mobile */
+        width: 93%; /* Set width for store images on mobile */
+        margin-top: 20px; /* Adjust top margin for store images on mobile */
     }
 
     .storedescription-container h3 {
         text-align: left;
-        padding-left: 47px;
-        margin-top: 390px;
+        padding-left: 47px; /* Adjust left padding for store description heading on mobile */
+        margin-top: 390px; /* Adjust top margin for store description heading on mobile */
+    }
+
+    .storedescription-container p {
+        padding-left: 47px; /* Adjust left padding for store description paragraph on mobile */
+        text-align: left; /* Align store description paragraph to the left on mobile */
+        margin-top: 39px; /* Adjust top margin for store description paragraph on mobile */
+    }
+
+
+    .about-container-bar h2 {
+        text-align: center; /* Center align the heading */
+        padding-left: 47px; /* Add left padding to the heading */
+    }
     
+    .about-container-bar h3 {
+        text-align: center; /* Center align the subheading */
+        padding-left: 47px; /* Add left padding to the subheading */
+        padding-right: 47px; /* Add right padding to the subheading */
     }
-
-    .storedescription-container p{
-        padding-left: 47px;
-        text-align: left;
-        margin-top: 39px;
-    }
-
-    .about-container-bar h2{
-        text-align: center;
-        padding-left: 47px;
-    }
-
-    .about-container-bar h3{
-        text-align: center;
-        padding-left: 47px;
-        padding-right: 47px;
-    }
-
-    
     
     .sample-cake {
-        flex: 0 0 calc(57% - 100px);
-        margin: 13px;
+        flex: 0 0 calc(57% - 100px); /* Set the flex properties for the sample cake */
+        margin: 13px; /* Adjust margin for the sample cake */
         position: relative;
         overflow: hidden;
-        align-items: center;
+        align-items: center; /* Align items to the center */
     }
+    
     .sample-cakes-container {
-        color: #000;
+        color: #000; /* Set the text color for the sample cakes container */
         display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: auto;
+        justify-content: center; /* Center align the content horizontally */
+        align-items: center; /* Center align the content vertically */
+        padding: auto; /* Set padding for the sample cakes container */
     }
-
+    
     .video-container {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 50vh ;
-        margin: 10px 0;
-        padding: 10px;
+        justify-content: center; /* Center align the content horizontally */
+        align-items: center; /* Center align the content vertically */
+        height: 50vh ; /* Set the height of the video container */
+        margin: 10px 0; /* Adjust margin for the video container */
+        padding: 10px; /* Set padding for the video container */
     }
+    
     .about-container {
-        max-width: 100%;
+        max-width: 100%; /* Set maximum width for the about container */
     }
-
+    
     .image-row {
         display: flex;
-        flex-wrap: wrap;
-        
+        flex-wrap: wrap; /* Wrap the items within the image row */
     }
-
+    
     .image-container {
-        flex: 0 0 calc(50% - 20px);
-        margin: 10px;
-        align-items: center;
+        flex: 0 0 calc(50% - 20px); /* Set the flex properties for the image container */
+        margin: 10px; /* Adjust margin for the image container */
+        align-items: center; /* Align items to the center */
     }
-
+    
     .image-row img {
-        width: 100%;
-        height: 0 auto;
+        width: 100%; /* Set width for images within the image row */
+        height: 0 auto; /* Maintain aspect ratio for images */
     }
-
+    
     .image-row p {
         width: 100%; /* Adjust the width for two columns */
-        text-align: center; /* Center the text */
-        
+        text-align: center; /* Center align the text within the image row */
     }
-
+    
     #local-video {
-        width: 91%; /* Adjust the percentage as needed */
+        width: 91%; /* Adjust the percentage width for the local video */
     }
-
+    
     .form-group {
-        width: 100%;
+        width: 100%; /* Set the width of the form group to 100% for responsiveness */
     }
-
+    
     .form-group label {
-        text-align: left;
+        text-align: left; /* Align the form group label to the left */
     }
-
+    
     .form-group3 input,
     .form-group3 textarea {
-        width: 350px;
-        box-sizing: border-box; /* Include padding and border in width calculation */
+        width: 350px; /* Set the width for form fields in form-group3 */
+        box-sizing: border-box; /* Include padding and border in the width calculation */
     }
+    
     .form-group2 input,
     .form-group2 textarea {
-        width: 350px;
-        box-sizing: border-box; /* Include padding and border in width calculation */
+        width: 350px; /* Set the width for form fields in form-group2 */
+        box-sizing: border-box; /* Include padding and border in the width calculation */
     }
-
+    
     .form-row {
-        flex-direction: row;
-        padding-left: 4px;
-        margin-top: 0px;
+        flex-direction: row; /* Arrange form rows in a horizontal direction */
+        padding-left: 4px; /* Add left padding to the form row */
+        margin-top: 0px; /* Adjust top margin of the form row */
     }
-
+    
     .form-row input,
     .form-row textarea {
         margin-right: 10px; /* Adjust spacing between form fields */
-        margin-bottom: 0;
-        margin-top: 0px;
-    }
-
-    .form-row1 {
-        display: flex;
-        flex-direction: column;
-        width: 55% ;
-        padding-left: 57px;
-    }
-
-    .form-row1 #name {
-        margin-bottom: 28px;
-    }
-
-    .form-row1 input,
-    .form-row1 textarea {
-        margin-right: 10px; /* Adjust spacing between form fields */
-        margin-bottom: 10px;
-
+        margin-bottom: 0; /* Reset bottom margin for form fields */
+        margin-top: 0px; /* Adjust top margin of form fields */
     }
     
-    .popup-content2 .submit-container{
-        padding-right: 12% ;
+    .form-row1 {
+        display: flex;
+        flex-direction: column; /* Arrange form row1 in a vertical direction */
+        width: 55% ; /* Set the width for form row1 */
+        padding-left: 57px; /* Add left padding to form row1 */
+    }
+    
+    .form-row1 #name {
+        margin-bottom: 28px; /* Adjust bottom margin for the 'name' field in form row1 */
+    }
+    
+    .form-row1 input,
+    .form-row1 textarea {
+        margin-right: 10px; /* Adjust spacing between form fields in form row1 */
+        margin-bottom: 10px; /* Adjust bottom margin for form fields in form row1 */
+    }
+    
+    .popup-content2 .submit-container {
+        padding-right: 12%; /* Add right padding to the submit container in popup-content2 */
     }
    
-    /* Add other mobile styles here */
 }

@@ -72,28 +72,34 @@ window.location.href = 'index.html';
 
 
 // Video play/pause based on visibility in the viewport
+
+// Get references to the video container and the video element
 const videoContainer = document.getElementById('video-container');
 const localVideo = document.getElementById('local-video');
 
+// Options for the IntersectionObserver
 const options = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.5,
+    root: null,         // Use the viewport as the root
+    rootMargin: '0px',  // No margin around the root
+    threshold: 0.5,     // Trigger when 50% of the video is visible
 };
 
+// Create a new IntersectionObserver with a callback function
 const videoObserver = new IntersectionObserver((entries) => {
+    // Iterate through each entry in the observer
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            // Video is in the viewport, start playing
+            // If the video is in the viewport, start playing
             localVideo.play();
-            localVideo.removeAttribute('controls', 'true'); // remove controls
+            localVideo.removeAttribute('controls', 'true'); // Remove controls for better visibility
         } else {
-            // Video is out of the viewport, pause
+            // If the video is out of the viewport, pause
             localVideo.pause();
         }
     });
 }, options);
 
+// Start observing the video container
 videoObserver.observe(videoContainer);
 
 // JavaScript for Pop-up Form

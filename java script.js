@@ -105,6 +105,9 @@ function openPopupForm() {
 
 function closePopupForm() {
     document.querySelector('.popup-content').style.display = 'none';
+    
+    // Show the "Submitted" alert
+    alert('Submitted');
 }
 
 // Function to reset the form fields

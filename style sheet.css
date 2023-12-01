@@ -93,6 +93,11 @@ nav a {
     cursor: pointer; /* Add pointer cursor on hover */
 }
 
+/* Style on hover */
+.custom-button:hover {
+    background-color: #72be21; /* Change color on hover */
+}
+
 /* Styles for slider dots */
 .slider-dots {
     text-align: center; /* Center-align text in the slider dots */

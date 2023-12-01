@@ -262,7 +262,7 @@ function updateCartPopupContent() {
 
 // Function to handle the checkout button click
 function handleCheckout() {
-    alert('Checking Out');
+    alert('Thank You for buying our cake!');
 
     // Close the cart
     toggleCart();

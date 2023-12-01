@@ -238,10 +238,31 @@ function updateCartPopupContent() {
         totalPriceElement.className = 'total-price';
         totalPriceElement.innerHTML = `<strong>Total Price: </strong> $${totalPrice.toFixed(2)}`;
         totalPriceElement.style.paddingBlockEnd = '70px';
+        totalPriceElement.style.paddingLeft = '20px';
         cartPopupContent.appendChild(totalPriceElement);
+
+        // Create and append the checkout button
+        const checkoutButton = document.createElement('button');
+        checkoutButton.textContent = 'Checkout';
+        checkoutButton.className = 'checkout-button';
+        checkoutButton.addEventListener('click', handleCheckout);
+        cartPopupContent.appendChild(checkoutButton);
     }
 }
 
+
+// Function to handle the checkout button click
+function handleCheckout() {
+    alert('Checking Out');
+
+    // Close the cart
+    toggleCart();
+
+    // Clear cart items
+    cart = [];
+    updateCartCount();
+    updateCartPopupContent();
+}
 
 
 // Function to delete a cake from the cart

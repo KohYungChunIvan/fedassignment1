@@ -53,7 +53,7 @@ nav li {
 nav a {
     text-decoration: none; /* Remove text decoration */
     color: #000; /* Black text color */
-    font-weight: bold; /* Set font weight to bold */
+    font-weight: bold; /* Set font to bold */
 }
 
 /* Styles for the slideshow container */
@@ -363,6 +363,25 @@ footer {
     padding-left: 151px; /* Adjust the left padding */
 }
 
+.checkout-button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    position: relative; /* Adjust positioning based on your layout */
+    left: 353px; /* Adjust the right position as needed */
+    bottom: 109px; /* Adjust the bottom position as needed */
+
+}
+
+/* Style on hover */
+.checkout-button:hover {
+    background-color: #45a049; /* Change color on hover */
+}
 
 /* Style for a grey horizontal line */
 .grey-line {

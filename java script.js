@@ -110,7 +110,7 @@ function openPopupForm() {
 }
 
 function closePopupForm() {
-    .querySelector('.popup-content').styledocument.display = 'none';
+    querySelector('.popup-content').styledocument.display = 'none';
     
     // Show the "Submitted" alert
     alert('Submitted');
